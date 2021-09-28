@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');   
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color: #494c57;
+
+}
+
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#edf0f1;
+    text-decoration:none;
+    font-size:20px;
+    color: #494949;
+    
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav-links{
+    list-style:none;
+    
+}
+.main-nav{
+    background-color:#edf0f1;
+    height:30px;
+    border:20px;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(8,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(8,136,182,0.8);
+}
+
+h1,p,h2{
+    color:#edf0f1;
+}
+p{
+    font-size:16px;
+    font-family: Montserrat;
+}
+
+.register_form{
+    font-family:Montserrat;
+    display: block;
+    /* justify-content: center; */
+}
+
+.rbutton{
+    border-radius:50px;
+    width:60px;
+}
+
+.rbutton:hover{
+    background-color:red;
+}
+
+.sbutton{
+    border-radius:50px;
+    width:60px;
+}
+
+.sbutton:hover{
+    background-color:#0088a9;
+}
+
+.register-link{
+    color:#edf0f1;
+}
+
+.register-link:hover{
+    color:#3638d6;
+}
+
+.forms{
+    margin-left:40%;
+}
+
+.text{
+    margin-left:40%;
+}

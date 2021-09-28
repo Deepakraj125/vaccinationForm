@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class ="main-nav">
+            <img class ="logo" src= "logo.jpg" alt="logo">
+            <nav >
+                <ul class ="nav-links">
+                    <li> <a href= "index.html" id ="home">Home </li>
+                     <li> <a href= "about.html">About </li>
+                     <li> <a href= " register.html">Register </li>
+                    <li><a href ="download.html">Download</li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact.html"><button >Contact</button></a>
+        </header>
+        <br>
+        <br>
+        <div class ="text">
+            <h1>Register here</h1>
+            <br>
+    </div>
+
+   
+        <!-- <script>
+            function validateemail()  
+            {  
+            var x=document.myform.email.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+            alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+            return false;  
+            }  
+            }       
+        </script> -->
+        <div class ="forms">
+            <form class="register_form"  name = "myform" action ="connect.php" method = "post" >
+                <!-- onsubmit = "return validation() in form tag -->
+                <label> First name </label><br>
+                <input type = "text" name ="firstName" required> <br><br>
+                <label> Middle name </label><br>
+                <input type = "text"name = "middleName  " required> <br><br>
+                <label> Last name </label><br>
+                <input type = "text" name ="lastName" required> <br><br>
+                <label> Email Address </label><br>
+                <input type = "email" name = "email" > <br><br>
+               
+                <label> Phone Number  </label><br>
+                <input type = "tel" pattern = "^\+91[7-9]{1}[0-9]{9}$"name = "phoneNo" required><br><br>
+                <label>Birthdate</label><br>
+                <input type ="date" name="birth_date" required><br><br>
+                <label>Gender</label><br>
+                <input type = "radio" name="gender" value ="m" >
+                <label>Male</label><br>
+                <input type = "radio" name="gender" value ="f" >
+                <label>Female</label><br>
+                <input type = "radio" name="gender" value ="o" >
+                <label>other</label><br>
+                <br><br>
+                <label>Address</label><br>
+                <input type ="text" name ="Address" required><br><br>
+                <label>Vaccine Center</label><br>
+            <input type ="text"  name ="center" requied><br><br>
+            <label>Slot Timing</label><br>
+            <input type ="text" name ="slot" required><br><br>
+            <label>Enter OTP </label><br> 
+             <input type ="password" pattern="[0-9]{6}" required> <br><br>
+            <input type ="reset" value ="reset" class="rbutton" >
+            <input type ="submit" value = "register" id ="submit_button" class="sbutton">
+
+            </form>   
+    </div>
+  
+
+    </body>    
+
+</html>
