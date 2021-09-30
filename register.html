@@ -25,7 +25,7 @@
     </div>
 
    
-        <!-- <script>
+        <script>
             function validateemail()  
             {  
             var x=document.myform.email.value;  
@@ -36,10 +36,9 @@
             return false;  
             }  
             }       
-        </script> -->
+        </script> 
         <div class ="forms">
-            <form class="register_form"  name = "myform" action ="connect.php" method = "post" >
-                <!-- onsubmit = "return validation() in form tag -->
+            <form class="register_form"  name = "myform" action ="connect.php" method = "post"  onsubmit = "return validation() >
                 <label> First name </label><br>
                 <input type = "text" name ="firstName" required> <br><br>
                 <label> Middle name </label><br>
